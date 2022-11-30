@@ -1,0 +1,53 @@
+<body style="background-color:lightslategrey">
+
+    <div>
+        <br><br>
+        <div class="center-content">
+            <h1 style="font-family: Arial; font-weight: bold; color: white;">Address Token</h1>
+        </div>
+        <div class="center-content">
+            <mat-card style="width: 40%; height: 10%;">
+                <div class="center-content">
+                    <FONT FACE="impact" SIZE=5 COLOR="black">
+                        {{ account.address }}
+                    </FONT>
+                </div>
+            </mat-card>
+        </div>
+
+        <br><br>
+
+        <div class="center-content">
+            <h1 style="font-family: Arial; font-weight: bold; color: white;">Ethers</h1>
+        </div>
+        <div class="center-content">
+            <mat-card style="width: 40%; height: 10%;">
+                <div class="center-content">
+                    <FONT FACE="impact" SIZE=5 COLOR="black">
+                        {{ account.balance }} ETH
+                    </FONT>
+                </div>
+            </mat-card>
+        </div>
+
+        <br><br>
+
+        <div class="center-content">
+            <button mat-raised-button color="primary" (click)="updateAccountInfo()">
+                Update Account
+            </button>
+
+            <button style="margin: 10px" mat-raised-button color="primary" (click)="nuevaTransaccion()">
+                New transaction()
+            </button>
+
+            <button mat-raised-button color="primary" (click)="callView()">
+                View account balance()
+            </button>
+
+        </div>
+
+    </div>
+
+
+</body>
